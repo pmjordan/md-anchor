@@ -14,7 +14,7 @@ class TestProcessFile(unittest.TestCase):
             f.write('## 10.1 Heading\n')
             f.write('## 10.2 Two Word\n')
             f.write('## 10.3 Hyphen-word Heading\n')
-            f.write('## 10.3 Three word Heading\n')
+            f.write('### 10.4.1 Three word Heading\n')
             f.write('## Not a number\n')
 
         # Create an expected output file
@@ -22,13 +22,13 @@ class TestProcessFile(unittest.TestCase):
         with open(self.expected_output_file_path, 'w') as f:
             f.write('This is a test.\n')
             f.write('# no number\n')
-            f.write('# 1 (Heading)\n')
-            f.write('## 1.1 (Heading)\n')
-            f.write('# 10 (Heading)\n')
-            f.write('## 10.1 (Heading)\n')
-            f.write('## 10.2 (Two Word)\n')
-            f.write('## 10.3 (Hyphen-word Heading)\n')
-            f.write('### 10.4.1 (Three word Heading)\n')
+            f.write('# (1 Heading)\n')
+            f.write('## (1.1 Heading)\n')
+            f.write('# (10 Heading)\n')
+            f.write('## (10.1 Heading)\n')
+            f.write('## (10.2 Two Word)\n')
+            f.write('## (10.3 Hyphen-word Heading)\n')
+            f.write('### (10.4.1 Three word Heading)\n')
             f.write('## Not a number\n')
 
         # Path for the actual output file
@@ -36,7 +36,7 @@ class TestProcessFile(unittest.TestCase):
 
     def test_process_file(self):
         # Run the function
-        mdanchor.add_anchors_to_markdown(self.input_file_path, self.output_file_path, 'stuff')
+        mdanchor.add_anchors_to_markdown(self.input_file_path, self.output_file_path, '')
 
         # Compare the output file to the expected output file
         with open(self.output_file_path, 'r') as outfile, open(self.expected_output_file_path, 'r') as expectedfile:
