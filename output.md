@@ -6,7 +6,7 @@
 
 ## Committee Specification Draft 07
 
-## 16 July 2024 <a name="july-2024"></a>
+## (16 July 2024)
 
 &nbsp;
 
@@ -100,7 +100,7 @@ For complete copyright information please see the full Notices section in an App
 
 -------
 
-# 1 Introduction <a name="introduction"></a>
+# (1 Introduction)
 The Topology and Orchestration Specification for Cloud Applications
 (TOSCA) provides a language for describing components and
 their relationships by means of a service topology, and for specifying
@@ -114,7 +114,7 @@ connections, compositions) drives the automated processes.
 
 The content in this section is non-normative.
 
-## 1.1 Changes from Earlier Versions <a name="changes-from-earlier-versions"></a>
+## (1.1 Changes from Earlier Versions)
 
 This version of the specification includes significant changes from
 TOSCA 1.3. In particular:
@@ -160,17 +160,17 @@ TOSCA 1.3. In particular:
    - Short notation for entry_schema and key_schema has been
      documented
 
-## 1.2 Document Conventions <a name="document-conventions"></a>
+## (1.2 Document Conventions)
 
 - Naming conventions
 - Font colors and styles
 - Typographic conventions
 
-## 1.3 Glossary <a name="glossary"></a>
+## (1.3 Glossary)
 
 <!-- Optional section with suggested subsections -->
 
-### 1.3.1 Definitions of terms <a name="definitions-of-terms"></a>
+### (1.3.1 Definitions of terms)
 The following terms are used throughout this specification and have
 the following definitions when used in context of this document.
 
@@ -183,7 +183,7 @@ the following definitions when used in context of this document.
 |Topology Model| A Topology Model defines the structure of a service in the context of a service template. A Topology model consists of a set of node template and relationship template definitions that together define the topology of a service as a (not necessarily connected) directed graph.                                                                                  |
 |Abstract Node Template | An abstract node template is a node template that doesn’t define any implementations for the TOSCA lifecycle management operations. Service designers explicitly mark node templates as abstract using the substitute directive. TOSCA orchestrators provide implementations for abstract node templates by finding substituting templates for those node templates. |
 
-### 1.3.2 Acronyms and Abbreviations <a name="acronyms-and-abbreviations"></a>
+### (1.3.2 Acronyms and Abbreviations)
 Defined in this document
 - TOSCA Topology and Orchestration Specification for Cloud Applications
 - CSAR  Cloud Service Archive A file format defined by OASIS TOSCA to contain TOSCA files
@@ -202,7 +202,7 @@ Used as examples
 - VPN Virtual Private Network
 - USD United States Dollar
 -------
-# 2 TOSCA Overview <a name="tosca-overview"></a>
+# (2 TOSCA Overview)
 
 The *Topology and Orchestration Specification for Cloud Applications*
 (TOSCA) is a *domain-specific language* (DSL) for automating
@@ -219,5 +219,5 @@ monitoring, etc.).
 
 The content in this section is non-normative.
 
-## 2.1 Objectives <a name="objectives"></a>
+## (2.1 Objectives)
 
