@@ -3,7 +3,6 @@ import re
 
 # ways to do anchor
 
-
 #\[See “nil”, below\](#nil)
 #  #### 9.1.1.6 nil 
 #but the slug includes 9116
@@ -11,7 +10,6 @@ import re
 # so try 
 # ### This is the Heading <a name="this-is-the-heading"></a>
 
-# TODO add real anchors
 # TODO don't add anchors to lines which already have them
 
 def add_anchors_to_markdown(input_file_path, output_file_path):
@@ -42,4 +40,4 @@ def add_anchors_to_markdown(input_file_path, output_file_path):
     print(f'Processed lines written to {output_file_path}')
 
 # Example usage:
-add_anchors_to_markdown('test.md', 'output.md')
+add_anchors_to_markdown('input.md', 'output.md')
