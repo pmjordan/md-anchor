@@ -4,7 +4,7 @@ import mdanchor
 class TestProcessFile(unittest.TestCase):
     def setUp(self):
         # Create a sample input file
-        self.input_file_path = 'input.md'
+        self.input_file_path = 'test_input.md'
         with open(self.input_file_path, 'w') as f:
             f.write('This is a test.\n')
             f.write('# no number\n')
@@ -22,13 +22,13 @@ class TestProcessFile(unittest.TestCase):
         with open(self.expected_output_file_path, 'w') as f:
             f.write('This is a test.\n')
             f.write('# no number\n')
-            f.write('# 1 Heading\n')
-            f.write('## 1.1 Heading\n')
-            f.write('# 10 Heading\n')
-            f.write('## 10.1 Heading\n')
-            f.write('## 10.2 Two Word\n')
-            f.write('## 10.3 Hyphen-word Heading\n')
-            f.write('### 10.4.1 Three word Heading\n')
+            f.write('# 1 Heading <a name=heading></a>\n')
+            f.write('## 1.1 Heading <a name=heading></a>\n')
+            f.write('# 10 Heading <a name=heading></a>\n')
+            f.write('## 10.1 Heading <a name=heading></a>\n')
+            f.write('## 10.2 Two Word <a name=two-word></a>\n')
+            f.write('## 10.3 Hyphen-word Heading <a name=hyphen-word-heading></a>\n')
+            f.write('### 10.4.1 Three word Heading <a name=three-word-heading></a>\n')
             f.write('## Not a number\n')
 
         # Path for the actual output file

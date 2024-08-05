@@ -1,7 +1,7 @@
 
 -------
 
-# 1 Introduction <a name=introduction></a>
+# 1 Introduction
 The Topology and Orchestration Specification for Cloud Applications
 (TOSCA) provides a language for describing components and
 their relationships by means of a service topology, and for specifying
@@ -15,7 +15,7 @@ connections, compositions) drives the automated processes.
 
 The content in this section is non-normative.
 
-## 1.1 Changes from Earlier Versions <a name=changes-from-earlier-versions></a>
+## 1.1 Changes from Earlier Versions
 
 This version of the specification includes significant changes from
 TOSCA 1.3. In particular:
@@ -61,16 +61,16 @@ TOSCA 1.3. In particular:
    - Short notation for entry_schema and key_schema has been
      documented
 
-## 1.2 Document Conventions <a name=document-conventions></a>
+## 1.2 Document Conventions
 
 - Naming conventions
 - Font colors and styles
 - Typographic conventions
 
-## 1.3 Glossary <a name=glossary></a>
+## 1.3 Glossary
 
 <!-- Optional section with suggested subsections -->
 
-### 1.3.1 Definitions of terms <a name=definitions-of-terms></a>
+### 1.3.1 Definitions of terms
 The following terms are used throughout this specification and have
 the following definitions when used in context of this document.
